@@ -1,0 +1,6 @@
+module Pods_QQingOnlineStudentMac {
+  umbrella header "Pods-QQingOnlineStudentMac-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ClassroomVC" customModule="QQingOnlineStudentMac" customModuleProvider="target">
+            <connections>
+                <outlet property="titlebarBottomLineGrayView" destination="kno-GS-z3E" id="hF2-ji-ZOW"/>
+                <outlet property="toolbarView" destination="2Ca-NP-0C5" id="88V-ak-YrK"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="851" height="567"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="2Ca-NP-0C5">
+                    <rect key="frame" x="0.0" y="527" width="851" height="40"/>
+                    <subviews>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="kno-GS-z3E">
+                            <rect key="frame" x="0.0" y="0.0" width="851" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="7cE-mK-yeV"/>
+                            </constraints>
+                        </customView>
+                        <button translatesAutoresizingMaskIntoConstraints="NO" id="gxI-0j-e8R">
+                            <rect key="frame" x="706" y="11" width="18" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="21O-rh-4tc"/>
+                                <constraint firstAttribute="width" constant="18" id="Qc2-5g-O15"/>
+                            </constraints>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="setting" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="k3X-74-lJh">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <button translatesAutoresizingMaskIntoConstraints="NO" id="0Ut-rN-KeG">
+                            <rect key="frame" x="668" y="11" width="18" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="18" id="9se-Y9-ge5"/>
+                                <constraint firstAttribute="height" constant="18" id="ysu-or-0Pv"/>
+                            </constraints>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="refresh" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="0jM-Xp-iFG">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <button translatesAutoresizingMaskIntoConstraints="NO" id="Hcb-Um-2fF">
+                            <rect key="frame" x="744" y="7" width="87" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="91r-gD-qGl"/>
+                                <constraint firstAttribute="width" constant="87" id="Nwv-Sa-fL4"/>
+                            </constraints>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="help" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ZK7-jn-SQq">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <button translatesAutoresizingMaskIntoConstraints="NO" id="i0U-VZ-vUU">
+                            <rect key="frame" x="630" y="11" width="18" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="18" id="7i2-fx-khh"/>
+                                <constraint firstAttribute="height" constant="18" id="qXW-iZ-j76"/>
+                            </constraints>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="setting" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="9h9-XC-eRY">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="gxI-0j-e8R" firstAttribute="centerY" secondItem="Hcb-Um-2fF" secondAttribute="centerY" id="25f-np-MUi"/>
+                        <constraint firstItem="gxI-0j-e8R" firstAttribute="centerY" secondItem="0Ut-rN-KeG" secondAttribute="centerY" id="8OV-qW-swx"/>
+                        <constraint firstItem="gxI-0j-e8R" firstAttribute="centerY" secondItem="i0U-VZ-vUU" secondAttribute="centerY" id="8Zo-Cf-XhS"/>
+                        <constraint firstAttribute="trailing" secondItem="Hcb-Um-2fF" secondAttribute="trailing" constant="20" id="BUB-aI-HWW"/>
+                        <constraint firstItem="0Ut-rN-KeG" firstAttribute="leading" secondItem="i0U-VZ-vUU" secondAttribute="trailing" constant="20" id="FvD-Fl-Bfw"/>
+                        <constraint firstItem="gxI-0j-e8R" firstAttribute="leading" secondItem="0Ut-rN-KeG" secondAttribute="trailing" constant="20" id="GQh-RW-IC8"/>
+                        <constraint firstItem="kno-GS-z3E" firstAttribute="leading" secondItem="2Ca-NP-0C5" secondAttribute="leading" id="HMX-38-419"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="J1v-3W-hTq"/>
+                        <constraint firstItem="Hcb-Um-2fF" firstAttribute="leading" secondItem="gxI-0j-e8R" secondAttribute="trailing" constant="20" id="ZZa-cU-3vb"/>
+                        <constraint firstAttribute="trailing" secondItem="kno-GS-z3E" secondAttribute="trailing" id="aJ0-Ku-SWu"/>
+                        <constraint firstAttribute="height" constant="40" id="iYq-sG-fRr"/>
+                        <constraint firstAttribute="bottom" secondItem="kno-GS-z3E" secondAttribute="bottom" id="qdY-fs-qUK"/>
+                        <constraint firstItem="gxI-0j-e8R" firstAttribute="centerY" secondItem="2Ca-NP-0C5" secondAttribute="centerY" id="wju-Ja-yHd"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="lj3-8b-lkN" customClass="QQHeadVideoView" customModule="QQingOnlineStudentMac" customModuleProvider="target">
+                    <rect key="frame" x="551" y="0.0" width="300" height="527"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="7QQ-du-1PI"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="lj3-8b-lkN" firstAttribute="top" secondItem="2Ca-NP-0C5" secondAttribute="bottom" id="43z-12-d6W"/>
+                <constraint firstAttribute="bottom" secondItem="lj3-8b-lkN" secondAttribute="bottom" id="DFz-p7-Ki4"/>
+                <constraint firstItem="2Ca-NP-0C5" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="TxD-06-MrS"/>
+                <constraint firstAttribute="trailing" secondItem="lj3-8b-lkN" secondAttribute="trailing" id="Umw-jF-SiG"/>
+                <constraint firstAttribute="trailing" secondItem="2Ca-NP-0C5" secondAttribute="trailing" id="YDS-0P-bHd"/>
+                <constraint firstItem="2Ca-NP-0C5" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Zbq-Mk-jvC"/>
+            </constraints>
+            <point key="canvasLocation" x="149.5" y="58.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="help" width="43.5" height="15"/>
+        <image name="refresh" width="10" height="9"/>
+        <image name="setting" width="9" height="9"/>
+    </resources>
+</document>

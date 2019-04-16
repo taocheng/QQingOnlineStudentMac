@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="QQCheckDeviceView" customModule="QQingOnlineStudentMac" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="700" height="468"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="cEa-8I-gmw">
+                    <rect key="frame" x="670" y="438" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="9E3-R8-wyr"/>
+                        <constraint firstAttribute="width" constant="30" id="k5W-DX-0Vw"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Cgb-YG-nx4">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="didClickOnCloseButton:" target="c22-O7-iKe" id="gqX-dH-a4s"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="cEa-8I-gmw" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="RH4-Ug-qey"/>
+                <constraint firstAttribute="trailing" secondItem="cEa-8I-gmw" secondAttribute="trailing" id="hpk-87-fAp"/>
+            </constraints>
+            <connections>
+                <outlet property="closeButton" destination="cEa-8I-gmw" id="YPR-G1-pk0"/>
+            </connections>
+            <point key="canvasLocation" x="-323" y="-142"/>
+        </customView>
+    </objects>
+</document>

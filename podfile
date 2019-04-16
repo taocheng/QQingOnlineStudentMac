@@ -1,0 +1,8 @@
+platform :osx, '10.9'
+inhibit_all_warnings!
+
+target "QQingOnlineStudentMac" do
+    pod 'SDWebImage'
+    pod 'ReactiveCocoa'
+    pod 'Masonry'
+end

@@ -1,0 +1,1341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32021EFF2201B1DE001C0660 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32021EFE2201B1DE001C0660 /* StringExtension.swift */; };
+		32240D0021DCA1E600F3F1B4 /* QQBaseWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32240CFF21DCA1E600F3F1B4 /* QQBaseWindow.swift */; };
+		32240D2221DD9C5500F3F1B4 /* QQBaseWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32240D2021DD9C5500F3F1B4 /* QQBaseWindowVC.swift */; };
+		32240D2321DD9C5500F3F1B4 /* QQBaseWindowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32240D2121DD9C5500F3F1B4 /* QQBaseWindowVC.xib */; };
+		32240D4221DF2E3F00F3F1B4 /* QQHoverButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32240D4121DF2E3F00F3F1B4 /* QQHoverButton.swift */; };
+		32240D5421DF657F00F3F1B4 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32240D4A21DF657F00F3F1B4 /* HomeVC.xib */; };
+		32240D5521DF657F00F3F1B4 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32240D4B21DF657F00F3F1B4 /* HomeVC.swift */; };
+		32240D5621DF657F00F3F1B4 /* LoginWindowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32240D4D21DF657F00F3F1B4 /* LoginWindowVC.xib */; };
+		32240D5721DF657F00F3F1B4 /* HomeWindowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32240D4E21DF657F00F3F1B4 /* HomeWindowVC.xib */; };
+		32240D5821DF657F00F3F1B4 /* HomeWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32240D4F21DF657F00F3F1B4 /* HomeWindowVC.swift */; };
+		32240D5921DF658000F3F1B4 /* LoginWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32240D5021DF657F00F3F1B4 /* LoginWindowVC.swift */; };
+		32240D5A21DF658000F3F1B4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32240D5221DF657F00F3F1B4 /* LoginVC.swift */; };
+		32240D5B21DF658000F3F1B4 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32240D5321DF657F00F3F1B4 /* LoginVC.xib */; };
+		32240D5D21DF66B600F3F1B4 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32240D5C21DF66B600F3F1B4 /* LoginVM.swift */; };
+		3231B59521D75F0F007C82F2 /* libQQingMacCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 329C54DE21D4B69100B7E58C /* libQQingMacCommon.a */; };
+		3231B59721D76026007C82F2 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B59621D76026007C82F2 /* GLKit.framework */; };
+		3231B59B21D7603F007C82F2 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B59A21D7603F007C82F2 /* libicucore.tbd */; };
+		3231B59D21D76060007C82F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B59C21D76060007C82F2 /* Foundation.framework */; };
+		3231B59F21D7606E007C82F2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B59E21D7606E007C82F2 /* libz.tbd */; };
+		3231B5A121D7608E007C82F2 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5A021D7608E007C82F2 /* libsqlite3.0.tbd */; };
+		3231B5A321D76097007C82F2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5A221D76097007C82F2 /* CFNetwork.framework */; };
+		3231B5A521D760A5007C82F2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5A421D760A5007C82F2 /* CoreData.framework */; };
+		3231B5A721D760BE007C82F2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5A621D760BE007C82F2 /* CoreTelephony.framework */; };
+		3231B5A921D760C8007C82F2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5A821D760C8007C82F2 /* SystemConfiguration.framework */; };
+		3231B5AB21D760D1007C82F2 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5AA21D760D1007C82F2 /* CoreText.framework */; };
+		3231B5AD21D760DA007C82F2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5AC21D760DA007C82F2 /* QuartzCore.framework */; };
+		3231B5AF21D760F1007C82F2 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5AE21D760F1007C82F2 /* ImageIO.framework */; };
+		3231B5B121D760FB007C82F2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5B021D760FA007C82F2 /* Security.framework */; };
+		3231B5B321D76105007C82F2 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5B221D76105007C82F2 /* libiconv.tbd */; };
+		3231B5B521D76115007C82F2 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5B421D76115007C82F2 /* CoreAudio.framework */; };
+		3231B5B721D76120007C82F2 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5B621D76120007C82F2 /* libxml2.tbd */; };
+		3231B5B921D76129007C82F2 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5B821D76129007C82F2 /* libresolv.tbd */; };
+		3231B5BF21D76140007C82F2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5BE21D76140007C82F2 /* AVFoundation.framework */; };
+		3231B5C121D7614F007C82F2 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5C021D7614F007C82F2 /* JavaScriptCore.framework */; };
+		3231B5C321D7615D007C82F2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5C221D7615D007C82F2 /* WebKit.framework */; };
+		3231B5C521D76170007C82F2 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5C421D76170007C82F2 /* UserNotifications.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		3231B5C721D7617F007C82F2 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5C621D7617E007C82F2 /* VideoToolbox.framework */; };
+		3231B5C921D76189007C82F2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5C821D76189007C82F2 /* CoreMedia.framework */; };
+		3231B5CB21D761EE007C82F2 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3231B5CA21D761EE007C82F2 /* libc++.tbd */; };
+		327DE8C9221690C5000323DD /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327DE8C7221690C4000323DD /* WebP.framework */; };
+		327DE8E72216BDB2000323DD /* mom.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 327DE8E62216BBC9000323DD /* mom.bundle */; };
+		327FD77021F1A816006F2E8C /* QQColorDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FD76F21F1A816006F2E8C /* QQColorDefine.swift */; };
+		327FD77B21F1B33E006F2E8C /* AppInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FD77A21F1B33E006F2E8C /* AppInitializer.swift */; };
+		327FD78E21F1BD3C006F2E8C /* AppDeInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FD78D21F1BD3C006F2E8C /* AppDeInitializer.swift */; };
+		327FD79721F56A89006F2E8C /* AppUpdateConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FD79621F56A89006F2E8C /* AppUpdateConfig.swift */; };
+		327FD79A21F56DB4006F2E8C /* QQUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FD79921F56DB4006F2E8C /* QQUtils.swift */; };
+		3281C766222CC4FE00A1A2C7 /* AgoraRtcEngineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3281C765222CC4FE00A1A2C7 /* AgoraRtcEngineKit.framework */; };
+		3281C769222CC52000A1A2C7 /* AgoraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3281C768222CC52000A1A2C7 /* AgoraManager.swift */; };
+		3281C7A3222CC9AF00A1A2C7 /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3281C7A2222CC9AE00A1A2C7 /* libc++.1.tbd */; };
+		3281C7A4222CC9BC00A1A2C7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DDA94B221C131600894F6D /* Accelerate.framework */; };
+		3281C7A5222CC9D600A1A2C7 /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DDA949221C12FD00894F6D /* CoreWLAN.framework */; };
+		3281C7A7222CCA1100A1A2C7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3281C7A6222CCA1100A1A2C7 /* AudioToolbox.framework */; };
+		3281C7A9222CCA2900A1A2C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3281C7A8222CCA2900A1A2C7 /* CoreGraphics.framework */; };
+		3281C7AB222CCA4400A1A2C7 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3281C7AA222CCA4400A1A2C7 /* CoreVideo.framework */; };
+		3281C7AF222CDD9E00A1A2C7 /* guide.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3281C7AE222CDD9D00A1A2C7 /* guide.wav */; };
+		329776C82223F53F003EBC25 /* pic_qq_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776BC2223F53E003EBC25 /* pic_qq_logo@2x.png */; };
+		329776C92223F53F003EBC25 /* pic_qq_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776BD2223F53E003EBC25 /* pic_qq_logo@3x.png */; };
+		329776CA2223F53F003EBC25 /* icon_register_frame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776BE2223F53E003EBC25 /* icon_register_frame@2x.png */; };
+		329776CB2223F53F003EBC25 /* icon_register_remember@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776BF2223F53E003EBC25 /* icon_register_remember@2x.png */; };
+		329776CC2223F53F003EBC25 /* pic_qq_logo@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776C02223F53E003EBC25 /* pic_qq_logo@1x.png */; };
+		329776CD2223F53F003EBC25 /* refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776C22223F53E003EBC25 /* refresh@2x.png */; };
+		329776CE2223F53F003EBC25 /* help@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776C32223F53E003EBC25 /* help@1x.png */; };
+		329776CF2223F53F003EBC25 /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776C42223F53E003EBC25 /* setting@2x.png */; };
+		329776D02223F53F003EBC25 /* help@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776C52223F53E003EBC25 /* help@2x.png */; };
+		329776D12223F53F003EBC25 /* setting@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776C62223F53E003EBC25 /* setting@1x.png */; };
+		329776D22223F53F003EBC25 /* refresh@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776C72223F53E003EBC25 /* refresh@1x.png */; };
+		329776F62223F556003EBC25 /* check_device_warn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776D42223F556003EBC25 /* check_device_warn@2x.png */; };
+		329776F72223F556003EBC25 /* check_device_start_voice@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776D52223F556003EBC25 /* check_device_start_voice@1x.png */; };
+		329776F82223F556003EBC25 /* check_device_microphone_green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776D62223F556003EBC25 /* check_device_microphone_green@2x.png */; };
+		329776F92223F556003EBC25 /* check_device_voice@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776D72223F556003EBC25 /* check_device_voice@1x.png */; };
+		329776FA2223F556003EBC25 /* check_device_connectSuccess@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776D82223F556003EBC25 /* check_device_connectSuccess@1x.png */; };
+		329776FB2223F556003EBC25 /* check_device_speaker@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776D92223F556003EBC25 /* check_device_speaker@1x.png */; };
+		329776FC2223F556003EBC25 /* check_device_checking@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776DA2223F556003EBC25 /* check_device_checking@2x.png */; };
+		329776FD2223F556003EBC25 /* Combined Shape@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776DB2223F556003EBC25 /* Combined Shape@1x.png */; };
+		329776FE2223F556003EBC25 /* check_device_prepared@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776DC2223F556003EBC25 /* check_device_prepared@2x.png */; };
+		329776FF2223F556003EBC25 /* check_device_button_gray@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776DD2223F556003EBC25 /* check_device_button_gray@1x.png */; };
+		329777002223F556003EBC25 /* check_device_success@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776DE2223F556003EBC25 /* check_device_success@1x.png */; };
+		329777012223F556003EBC25 /* check_device_microphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776DF2223F556003EBC25 /* check_device_microphone@2x.png */; };
+		329777022223F556003EBC25 /* check_device_snap@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776E02223F556003EBC25 /* check_device_snap@1x.png */; };
+		329777032223F556003EBC25 /* check_device_button_green@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776E12223F556003EBC25 /* check_device_button_green@1x.png */; };
+		329777042223F556003EBC25 /* check_device_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776E22223F556003EBC25 /* check_device_camera@2x.png */; };
+		329777052223F556003EBC25 /* check_device_ear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776E32223F556003EBC25 /* check_device_ear@2x.png */; };
+		329777062223F556003EBC25 /* check_device_connectFail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776E42223F556003EBC25 /* check_device_connectFail@2x.png */; };
+		329777072223F556003EBC25 /* check_device_camera@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776E52223F556003EBC25 /* check_device_camera@1x.png */; };
+		329777082223F556003EBC25 /* check_device_ear@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776E62223F556003EBC25 /* check_device_ear@1x.png */; };
+		329777092223F556003EBC25 /* check_device_connectFail@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776E72223F556003EBC25 /* check_device_connectFail@1x.png */; };
+		3297770A2223F556003EBC25 /* check_device_snap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776E82223F556003EBC25 /* check_device_snap@2x.png */; };
+		3297770B2223F556003EBC25 /* check_device_button_green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776E92223F556003EBC25 /* check_device_button_green@2x.png */; };
+		3297770C2223F556003EBC25 /* check_device_microphone@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776EA2223F556003EBC25 /* check_device_microphone@1x.png */; };
+		3297770D2223F556003EBC25 /* check_device_prepared@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776EB2223F556003EBC25 /* check_device_prepared@1x.png */; };
+		3297770E2223F556003EBC25 /* check_device_button_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776EC2223F556003EBC25 /* check_device_button_gray@2x.png */; };
+		3297770F2223F556003EBC25 /* check_device_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776ED2223F556003EBC25 /* check_device_success@2x.png */; };
+		329777102223F556003EBC25 /* Combined Shape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776EE2223F556003EBC25 /* Combined Shape@2x.png */; };
+		329777112223F556003EBC25 /* check_device_speaker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776EF2223F556003EBC25 /* check_device_speaker@2x.png */; };
+		329777122223F556003EBC25 /* check_device_checking@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776F02223F556003EBC25 /* check_device_checking@1x.png */; };
+		329777132223F556003EBC25 /* check_device_start_voice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776F12223F556003EBC25 /* check_device_start_voice@2x.png */; };
+		329777142223F556003EBC25 /* check_device_microphone_green@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776F22223F556003EBC25 /* check_device_microphone_green@1x.png */; };
+		329777152223F556003EBC25 /* check_device_voice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776F32223F556003EBC25 /* check_device_voice@2x.png */; };
+		329777162223F556003EBC25 /* check_device_connectSuccess@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776F42223F556003EBC25 /* check_device_connectSuccess@2x.png */; };
+		329777172223F556003EBC25 /* check_device_warn@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329776F52223F556003EBC25 /* check_device_warn@1x.png */; };
+		3297771C22252B69003EBC25 /* QQCheckDeviceProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3297771B22252B69003EBC25 /* QQCheckDeviceProgressView.swift */; };
+		3297771F2225443F003EBC25 /* QQCheckDeviceNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3297771E2225443F003EBC25 /* QQCheckDeviceNetworkView.swift */; };
+		329777212225445B003EBC25 /* QQCheckDeviceNetworkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329777202225445B003EBC25 /* QQCheckDeviceNetworkView.xib */; };
+		329777382226586F003EBC25 /* QQJSExternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 329777372226586E003EBC25 /* QQJSExternal.m */; };
+		3297774522268E7D003EBC25 /* QQCourselistWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3297774322268E7D003EBC25 /* QQCourselistWebVC.swift */; };
+		3297774622268E7D003EBC25 /* QQCourselistWebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3297774422268E7D003EBC25 /* QQCourselistWebVC.xib */; };
+		329DF71C222E259C0090EB72 /* ClassroomWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DF71A222E259C0090EB72 /* ClassroomWindowVC.swift */; };
+		329DF71D222E259C0090EB72 /* ClassroomWindowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329DF71B222E259C0090EB72 /* ClassroomWindowVC.xib */; };
+		32A8F03B223F3DE30065E1CB /* VideoReplayWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8F039223F3DE30065E1CB /* VideoReplayWindowVC.swift */; };
+		32A8F03C223F3DE30065E1CB /* VideoReplayWindowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32A8F03A223F3DE30065E1CB /* VideoReplayWindowVC.xib */; };
+		32A8F042223F6EE00065E1CB /* QQBaseWebviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8F040223F6EE00065E1CB /* QQBaseWebviewVC.swift */; };
+		32A8F043223F6EE00065E1CB /* QQBaseWebviewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32A8F041223F6EE00065E1CB /* QQBaseWebviewVC.xib */; };
+		32A8F0A02240D5150065E1CB /* ClassroomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8F0992240D5140065E1CB /* ClassroomVC.swift */; };
+		32A8F0A12240D5150065E1CB /* QQHeadVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32A8F09A2240D5140065E1CB /* QQHeadVideoView.xib */; };
+		32A8F0A22240D5150065E1CB /* ClassroomVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32A8F09B2240D5140065E1CB /* ClassroomVC.xib */; };
+		32A8F0A32240D5150065E1CB /* ClassroomVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8F09C2240D5140065E1CB /* ClassroomVM.swift */; };
+		32A8F0A42240D5150065E1CB /* QQWhiteboardWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8F09D2240D5140065E1CB /* QQWhiteboardWebVC.swift */; };
+		32A8F0A52240D5150065E1CB /* QQWhiteboardWebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32A8F09E2240D5140065E1CB /* QQWhiteboardWebVC.xib */; };
+		32A8F0A62240D5150065E1CB /* QQHeadVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8F09F2240D5140065E1CB /* QQHeadVideoView.swift */; };
+		32A8F0A92240D5690065E1CB /* QQHeadVideoSwitchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8F0A82240D5690065E1CB /* QQHeadVideoSwitchManager.swift */; };
+		32CB796621D0AB1D006B0482 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CB796521D0AB1D006B0482 /* AppDelegate.swift */; };
+		32CB796821D0AB1E006B0482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32CB796721D0AB1E006B0482 /* Assets.xcassets */; };
+		32CB796B21D0AB1E006B0482 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32CB796921D0AB1E006B0482 /* MainMenu.xib */; };
+		32DDA982221CFC1A00894F6D /* SettingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDA981221CFC1A00894F6D /* SettingListView.swift */; };
+		32DDA984221CFC4300894F6D /* SettingListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DDA983221CFC4300894F6D /* SettingListView.xib */; };
+		32DDA988221D009E00894F6D /* QQNibLoadProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDA987221D009E00894F6D /* QQNibLoadProtocol.swift */; };
+		32DDA98A221D268700894F6D /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDA989221D268700894F6D /* ViewExtension.swift */; };
+		32DDA98D221D40E100894F6D /* QQCheckDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDA98C221D40E100894F6D /* QQCheckDeviceView.swift */; };
+		32DDA991221D448300894F6D /* QQCheckDeviceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DDA990221D448300894F6D /* QQCheckDeviceView.xib */; };
+		32DDA9BD221E9F1700894F6D /* QQBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDA9BC221E9F1700894F6D /* QQBaseVC.swift */; };
+		32DDAA712223CBF600894F6D /* QQCheckDevicePrepareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDAA702223CBF600894F6D /* QQCheckDevicePrepareView.swift */; };
+		32DDAA732223CC3600894F6D /* QQCheckDevicePrepareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DDAA722223CC3600894F6D /* QQCheckDevicePrepareView.xib */; };
+		32DDAA762223D72900894F6D /* QQCheckDeviceEarphoneAndSpeakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDAA752223D72900894F6D /* QQCheckDeviceEarphoneAndSpeakerView.swift */; };
+		32DDAA782223D73600894F6D /* QQCheckDeviceEarphoneAndSpeakerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DDAA772223D73600894F6D /* QQCheckDeviceEarphoneAndSpeakerView.xib */; };
+		32DDAA7A2223DE4A00894F6D /* QQCheckDeviceCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDAA792223DE4A00894F6D /* QQCheckDeviceCameraView.swift */; };
+		32DDAA7C2223DE5B00894F6D /* QQCheckDeviceCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DDAA7B2223DE5B00894F6D /* QQCheckDeviceCameraView.xib */; };
+		32DDAA7E2223E1F600894F6D /* QQCheckDeviceMicrophoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDAA7D2223E1F600894F6D /* QQCheckDeviceMicrophoneView.swift */; };
+		32DDAA802223E38700894F6D /* QQCheckDeviceMicrophoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DDAA7F2223E38700894F6D /* QQCheckDeviceMicrophoneView.xib */; };
+		E70A312903E2E62653DF6AB9 /* libPods-QQingOnlineStudentMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 799E599ED54C60339B4A241C /* libPods-QQingOnlineStudentMac.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		327DE8E22216BBC9000323DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 329C54D921D4B69000B7E58C /* QQingMacCommon.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 327DE8D02216AF88000323DD;
+			remoteInfo = mom;
+		};
+		327DE8E52216BBC9000323DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 329C54D921D4B69000B7E58C /* QQingMacCommon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 327DE8D12216AF88000323DD;
+			remoteInfo = mom;
+		};
+		329C54DD21D4B69100B7E58C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 329C54D921D4B69000B7E58C /* QQingMacCommon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32CB7B1221D34BD7006B0482;
+			remoteInfo = QQingMacCommon;
+		};
+		329C54DF21D4B69C00B7E58C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 329C54D921D4B69000B7E58C /* QQingMacCommon.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 32CB7B1121D34BD7006B0482;
+			remoteInfo = QQingMacCommon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32021EFE2201B1DE001C0660 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		32240CFF21DCA1E600F3F1B4 /* QQBaseWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQBaseWindow.swift; sourceTree = "<group>"; };
+		32240D2021DD9C5500F3F1B4 /* QQBaseWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQBaseWindowVC.swift; sourceTree = "<group>"; };
+		32240D2121DD9C5500F3F1B4 /* QQBaseWindowVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QQBaseWindowVC.xib; sourceTree = "<group>"; };
+		32240D4121DF2E3F00F3F1B4 /* QQHoverButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQHoverButton.swift; sourceTree = "<group>"; };
+		32240D4A21DF657F00F3F1B4 /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		32240D4B21DF657F00F3F1B4 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		32240D4D21DF657F00F3F1B4 /* LoginWindowVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginWindowVC.xib; sourceTree = "<group>"; };
+		32240D4E21DF657F00F3F1B4 /* HomeWindowVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeWindowVC.xib; sourceTree = "<group>"; };
+		32240D4F21DF657F00F3F1B4 /* HomeWindowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWindowVC.swift; sourceTree = "<group>"; };
+		32240D5021DF657F00F3F1B4 /* LoginWindowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWindowVC.swift; sourceTree = "<group>"; };
+		32240D5221DF657F00F3F1B4 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		32240D5321DF657F00F3F1B4 /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		32240D5C21DF66B600F3F1B4 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		3231B59621D76026007C82F2 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		3231B59821D7602E007C82F2 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		3231B59A21D7603F007C82F2 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		3231B59C21D76060007C82F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3231B59E21D7606E007C82F2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3231B5A021D7608E007C82F2 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		3231B5A221D76097007C82F2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3231B5A421D760A5007C82F2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3231B5A621D760BE007C82F2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3231B5A821D760C8007C82F2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3231B5AA21D760D1007C82F2 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		3231B5AC21D760DA007C82F2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3231B5AE21D760F1007C82F2 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		3231B5B021D760FA007C82F2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3231B5B221D76105007C82F2 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		3231B5B421D76115007C82F2 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		3231B5B621D76120007C82F2 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		3231B5B821D76129007C82F2 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		3231B5BA21D76132007C82F2 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		3231B5BC21D7613A007C82F2 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		3231B5BE21D76140007C82F2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3231B5C021D7614F007C82F2 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		3231B5C221D7615D007C82F2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		3231B5C421D76170007C82F2 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		3231B5C621D7617E007C82F2 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		3231B5C821D76189007C82F2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3231B5CA21D761EE007C82F2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		327DE8C7221690C4000323DD /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = QQingMacCommon/QQingMacCommon/QQingCommon/Vendor/WebP/WebP.framework; sourceTree = "<group>"; };
+		327DE8CA221691B3000323DD /* cmbkeyboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cmbkeyboard.framework; path = QQingMacCommon/QQingMacCommon/QQingCommon/Vendor/SDK/cmbkeyboard/cmbkeyboard.framework; sourceTree = "<group>"; };
+		327FD76F21F1A816006F2E8C /* QQColorDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQColorDefine.swift; sourceTree = "<group>"; };
+		327FD77A21F1B33E006F2E8C /* AppInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInitializer.swift; sourceTree = "<group>"; };
+		327FD78D21F1BD3C006F2E8C /* AppDeInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDeInitializer.swift; sourceTree = "<group>"; };
+		327FD79621F56A89006F2E8C /* AppUpdateConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateConfig.swift; sourceTree = "<group>"; };
+		327FD79921F56DB4006F2E8C /* QQUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQUtils.swift; sourceTree = "<group>"; };
+		3281C765222CC4FE00A1A2C7 /* AgoraRtcEngineKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraRtcEngineKit.framework; sourceTree = "<group>"; };
+		3281C768222CC52000A1A2C7 /* AgoraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraManager.swift; sourceTree = "<group>"; };
+		3281C7A2222CC9AE00A1A2C7 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		3281C7A6222CCA1100A1A2C7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3281C7A8222CCA2900A1A2C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3281C7AA222CCA4400A1A2C7 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		3281C7AE222CDD9D00A1A2C7 /* guide.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guide.wav; sourceTree = "<group>"; };
+		329776BC2223F53E003EBC25 /* pic_qq_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic_qq_logo@2x.png"; sourceTree = "<group>"; };
+		329776BD2223F53E003EBC25 /* pic_qq_logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic_qq_logo@3x.png"; sourceTree = "<group>"; };
+		329776BE2223F53E003EBC25 /* icon_register_frame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_register_frame@2x.png"; sourceTree = "<group>"; };
+		329776BF2223F53E003EBC25 /* icon_register_remember@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_register_remember@2x.png"; sourceTree = "<group>"; };
+		329776C02223F53E003EBC25 /* pic_qq_logo@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic_qq_logo@1x.png"; sourceTree = "<group>"; };
+		329776C22223F53E003EBC25 /* refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh@2x.png"; sourceTree = "<group>"; };
+		329776C32223F53E003EBC25 /* help@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help@1x.png"; sourceTree = "<group>"; };
+		329776C42223F53E003EBC25 /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@2x.png"; sourceTree = "<group>"; };
+		329776C52223F53E003EBC25 /* help@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help@2x.png"; sourceTree = "<group>"; };
+		329776C62223F53E003EBC25 /* setting@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@1x.png"; sourceTree = "<group>"; };
+		329776C72223F53E003EBC25 /* refresh@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh@1x.png"; sourceTree = "<group>"; };
+		329776D42223F556003EBC25 /* check_device_warn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_warn@2x.png"; sourceTree = "<group>"; };
+		329776D52223F556003EBC25 /* check_device_start_voice@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_start_voice@1x.png"; sourceTree = "<group>"; };
+		329776D62223F556003EBC25 /* check_device_microphone_green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_microphone_green@2x.png"; sourceTree = "<group>"; };
+		329776D72223F556003EBC25 /* check_device_voice@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_voice@1x.png"; sourceTree = "<group>"; };
+		329776D82223F556003EBC25 /* check_device_connectSuccess@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_connectSuccess@1x.png"; sourceTree = "<group>"; };
+		329776D92223F556003EBC25 /* check_device_speaker@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_speaker@1x.png"; sourceTree = "<group>"; };
+		329776DA2223F556003EBC25 /* check_device_checking@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_checking@2x.png"; sourceTree = "<group>"; };
+		329776DB2223F556003EBC25 /* Combined Shape@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Combined Shape@1x.png"; sourceTree = "<group>"; };
+		329776DC2223F556003EBC25 /* check_device_prepared@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_prepared@2x.png"; sourceTree = "<group>"; };
+		329776DD2223F556003EBC25 /* check_device_button_gray@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_button_gray@1x.png"; sourceTree = "<group>"; };
+		329776DE2223F556003EBC25 /* check_device_success@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_success@1x.png"; sourceTree = "<group>"; };
+		329776DF2223F556003EBC25 /* check_device_microphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_microphone@2x.png"; sourceTree = "<group>"; };
+		329776E02223F556003EBC25 /* check_device_snap@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_snap@1x.png"; sourceTree = "<group>"; };
+		329776E12223F556003EBC25 /* check_device_button_green@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_button_green@1x.png"; sourceTree = "<group>"; };
+		329776E22223F556003EBC25 /* check_device_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_camera@2x.png"; sourceTree = "<group>"; };
+		329776E32223F556003EBC25 /* check_device_ear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_ear@2x.png"; sourceTree = "<group>"; };
+		329776E42223F556003EBC25 /* check_device_connectFail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_connectFail@2x.png"; sourceTree = "<group>"; };
+		329776E52223F556003EBC25 /* check_device_camera@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_camera@1x.png"; sourceTree = "<group>"; };
+		329776E62223F556003EBC25 /* check_device_ear@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_ear@1x.png"; sourceTree = "<group>"; };
+		329776E72223F556003EBC25 /* check_device_connectFail@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_connectFail@1x.png"; sourceTree = "<group>"; };
+		329776E82223F556003EBC25 /* check_device_snap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_snap@2x.png"; sourceTree = "<group>"; };
+		329776E92223F556003EBC25 /* check_device_button_green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_button_green@2x.png"; sourceTree = "<group>"; };
+		329776EA2223F556003EBC25 /* check_device_microphone@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_microphone@1x.png"; sourceTree = "<group>"; };
+		329776EB2223F556003EBC25 /* check_device_prepared@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_prepared@1x.png"; sourceTree = "<group>"; };
+		329776EC2223F556003EBC25 /* check_device_button_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_button_gray@2x.png"; sourceTree = "<group>"; };
+		329776ED2223F556003EBC25 /* check_device_success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_success@2x.png"; sourceTree = "<group>"; };
+		329776EE2223F556003EBC25 /* Combined Shape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Combined Shape@2x.png"; sourceTree = "<group>"; };
+		329776EF2223F556003EBC25 /* check_device_speaker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_speaker@2x.png"; sourceTree = "<group>"; };
+		329776F02223F556003EBC25 /* check_device_checking@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_checking@1x.png"; sourceTree = "<group>"; };
+		329776F12223F556003EBC25 /* check_device_start_voice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_start_voice@2x.png"; sourceTree = "<group>"; };
+		329776F22223F556003EBC25 /* check_device_microphone_green@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_microphone_green@1x.png"; sourceTree = "<group>"; };
+		329776F32223F556003EBC25 /* check_device_voice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_voice@2x.png"; sourceTree = "<group>"; };
+		329776F42223F556003EBC25 /* check_device_connectSuccess@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_connectSuccess@2x.png"; sourceTree = "<group>"; };
+		329776F52223F556003EBC25 /* check_device_warn@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_device_warn@1x.png"; sourceTree = "<group>"; };
+		3297771B22252B69003EBC25 /* QQCheckDeviceProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQCheckDeviceProgressView.swift; sourceTree = "<group>"; };
+		3297771E2225443F003EBC25 /* QQCheckDeviceNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQCheckDeviceNetworkView.swift; sourceTree = "<group>"; };
+		329777202225445B003EBC25 /* QQCheckDeviceNetworkView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QQCheckDeviceNetworkView.xib; sourceTree = "<group>"; };
+		329777362226586E003EBC25 /* QQJSExternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQJSExternal.h; sourceTree = "<group>"; };
+		329777372226586E003EBC25 /* QQJSExternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQJSExternal.m; sourceTree = "<group>"; };
+		3297774322268E7D003EBC25 /* QQCourselistWebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQCourselistWebVC.swift; sourceTree = "<group>"; };
+		3297774422268E7D003EBC25 /* QQCourselistWebVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QQCourselistWebVC.xib; sourceTree = "<group>"; };
+		329C54D921D4B69000B7E58C /* QQingMacCommon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QQingMacCommon.xcodeproj; path = QQingMacCommon/QQingMacCommon.xcodeproj; sourceTree = "<group>"; };
+		329C54F421D60DED00B7E58C /* QQingOnlineStudentMac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QQingOnlineStudentMac-Bridging-Header.h"; sourceTree = "<group>"; };
+		329DF71A222E259C0090EB72 /* ClassroomWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomWindowVC.swift; sourceTree = "<group>"; };
+		329DF71B222E259C0090EB72 /* ClassroomWindowVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassroomWindowVC.xib; sourceTree = "<group>"; };
+		32A8F039223F3DE30065E1CB /* VideoReplayWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoReplayWindowVC.swift; sourceTree = "<group>"; };
+		32A8F03A223F3DE30065E1CB /* VideoReplayWindowVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoReplayWindowVC.xib; sourceTree = "<group>"; };
+		32A8F040223F6EE00065E1CB /* QQBaseWebviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQBaseWebviewVC.swift; sourceTree = "<group>"; };
+		32A8F041223F6EE00065E1CB /* QQBaseWebviewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QQBaseWebviewVC.xib; sourceTree = "<group>"; };
+		32A8F0922240837D0065E1CB /* QQingMac-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QQingMac-Prefix.pch"; sourceTree = "<group>"; };
+		32A8F0992240D5140065E1CB /* ClassroomVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassroomVC.swift; sourceTree = "<group>"; };
+		32A8F09A2240D5140065E1CB /* QQHeadVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QQHeadVideoView.xib; sourceTree = "<group>"; };
+		32A8F09B2240D5140065E1CB /* ClassroomVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassroomVC.xib; sourceTree = "<group>"; };
+		32A8F09C2240D5140065E1CB /* ClassroomVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassroomVM.swift; sourceTree = "<group>"; };
+		32A8F09D2240D5140065E1CB /* QQWhiteboardWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQWhiteboardWebVC.swift; sourceTree = "<group>"; };
+		32A8F09E2240D5140065E1CB /* QQWhiteboardWebVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QQWhiteboardWebVC.xib; sourceTree = "<group>"; };
+		32A8F09F2240D5140065E1CB /* QQHeadVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQHeadVideoView.swift; sourceTree = "<group>"; };
+		32A8F0A82240D5690065E1CB /* QQHeadVideoSwitchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQHeadVideoSwitchManager.swift; sourceTree = "<group>"; };
+		32CB796221D0AB1D006B0482 /* QQingOnlineStudentMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQingOnlineStudentMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32CB796521D0AB1D006B0482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32CB796721D0AB1E006B0482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32CB796A21D0AB1E006B0482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		32CB796C21D0AB1E006B0482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32CB796D21D0AB1E006B0482 /* QQingOnlineStudentMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QQingOnlineStudentMac.entitlements; sourceTree = "<group>"; };
+		32DDA947221C12E400894F6D /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		32DDA949221C12FD00894F6D /* CoreWLAN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreWLAN.framework; path = System/Library/Frameworks/CoreWLAN.framework; sourceTree = SDKROOT; };
+		32DDA94B221C131600894F6D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		32DDA981221CFC1A00894F6D /* SettingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListView.swift; sourceTree = "<group>"; };
+		32DDA983221CFC4300894F6D /* SettingListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingListView.xib; sourceTree = "<group>"; };
+		32DDA987221D009E00894F6D /* QQNibLoadProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQNibLoadProtocol.swift; sourceTree = "<group>"; };
+		32DDA989221D268700894F6D /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		32DDA98C221D40E100894F6D /* QQCheckDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQCheckDeviceView.swift; sourceTree = "<group>"; };
+		32DDA990221D448300894F6D /* QQCheckDeviceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QQCheckDeviceView.xib; sourceTree = "<group>"; };
+		32DDA9BC221E9F1700894F6D /* QQBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQBaseVC.swift; sourceTree = "<group>"; };
+		32DDAA702223CBF600894F6D /* QQCheckDevicePrepareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQCheckDevicePrepareView.swift; sourceTree = "<group>"; };
+		32DDAA722223CC3600894F6D /* QQCheckDevicePrepareView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QQCheckDevicePrepareView.xib; sourceTree = "<group>"; };
+		32DDAA752223D72900894F6D /* QQCheckDeviceEarphoneAndSpeakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQCheckDeviceEarphoneAndSpeakerView.swift; sourceTree = "<group>"; };
+		32DDAA772223D73600894F6D /* QQCheckDeviceEarphoneAndSpeakerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QQCheckDeviceEarphoneAndSpeakerView.xib; sourceTree = "<group>"; };
+		32DDAA792223DE4A00894F6D /* QQCheckDeviceCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQCheckDeviceCameraView.swift; sourceTree = "<group>"; };
+		32DDAA7B2223DE5B00894F6D /* QQCheckDeviceCameraView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QQCheckDeviceCameraView.xib; sourceTree = "<group>"; };
+		32DDAA7D2223E1F600894F6D /* QQCheckDeviceMicrophoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQCheckDeviceMicrophoneView.swift; sourceTree = "<group>"; };
+		32DDAA7F2223E38700894F6D /* QQCheckDeviceMicrophoneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QQCheckDeviceMicrophoneView.xib; sourceTree = "<group>"; };
+		4291CE08AAE703384861E782 /* Pods-QQingOnlineStudentMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQingOnlineStudentMac.release.xcconfig"; path = "Pods/Target Support Files/Pods-QQingOnlineStudentMac/Pods-QQingOnlineStudentMac.release.xcconfig"; sourceTree = "<group>"; };
+		4FE5C633B102261AB79124F4 /* Pods-QQingOnlineStudentMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQingOnlineStudentMac.release.xcconfig"; path = "Target Support Files/Pods-QQingOnlineStudentMac/Pods-QQingOnlineStudentMac.release.xcconfig"; sourceTree = "<group>"; };
+		5897C4FAAE44A2B2A1DBA079 /* Pods-QQingOnlineStudentMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQingOnlineStudentMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QQingOnlineStudentMac/Pods-QQingOnlineStudentMac.debug.xcconfig"; sourceTree = "<group>"; };
+		799E599ED54C60339B4A241C /* libPods-QQingOnlineStudentMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QQingOnlineStudentMac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE838F16541309E8901D3F40 /* Pods-QQingOnlineStudentMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQingOnlineStudentMac.debug.xcconfig"; path = "Target Support Files/Pods-QQingOnlineStudentMac/Pods-QQingOnlineStudentMac.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32CB795F21D0AB1D006B0482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3281C7AB222CCA4400A1A2C7 /* CoreVideo.framework in Frameworks */,
+				3281C7A9222CCA2900A1A2C7 /* CoreGraphics.framework in Frameworks */,
+				3281C7A7222CCA1100A1A2C7 /* AudioToolbox.framework in Frameworks */,
+				3281C7A5222CC9D600A1A2C7 /* CoreWLAN.framework in Frameworks */,
+				3281C7A4222CC9BC00A1A2C7 /* Accelerate.framework in Frameworks */,
+				3281C7A3222CC9AF00A1A2C7 /* libc++.1.tbd in Frameworks */,
+				327DE8C9221690C5000323DD /* WebP.framework in Frameworks */,
+				3231B5CB21D761EE007C82F2 /* libc++.tbd in Frameworks */,
+				3231B5C921D76189007C82F2 /* CoreMedia.framework in Frameworks */,
+				3231B5C721D7617F007C82F2 /* VideoToolbox.framework in Frameworks */,
+				3231B5C521D76170007C82F2 /* UserNotifications.framework in Frameworks */,
+				3231B5C321D7615D007C82F2 /* WebKit.framework in Frameworks */,
+				3231B5C121D7614F007C82F2 /* JavaScriptCore.framework in Frameworks */,
+				3231B5BF21D76140007C82F2 /* AVFoundation.framework in Frameworks */,
+				3231B5B921D76129007C82F2 /* libresolv.tbd in Frameworks */,
+				3231B5B721D76120007C82F2 /* libxml2.tbd in Frameworks */,
+				3281C766222CC4FE00A1A2C7 /* AgoraRtcEngineKit.framework in Frameworks */,
+				3231B5B521D76115007C82F2 /* CoreAudio.framework in Frameworks */,
+				3231B5B321D76105007C82F2 /* libiconv.tbd in Frameworks */,
+				3231B5B121D760FB007C82F2 /* Security.framework in Frameworks */,
+				3231B5AF21D760F1007C82F2 /* ImageIO.framework in Frameworks */,
+				3231B5AD21D760DA007C82F2 /* QuartzCore.framework in Frameworks */,
+				3231B5AB21D760D1007C82F2 /* CoreText.framework in Frameworks */,
+				3231B5A921D760C8007C82F2 /* SystemConfiguration.framework in Frameworks */,
+				3231B5A721D760BE007C82F2 /* CoreTelephony.framework in Frameworks */,
+				3231B5A521D760A5007C82F2 /* CoreData.framework in Frameworks */,
+				3231B5A321D76097007C82F2 /* CFNetwork.framework in Frameworks */,
+				3231B5A121D7608E007C82F2 /* libsqlite3.0.tbd in Frameworks */,
+				3231B59F21D7606E007C82F2 /* libz.tbd in Frameworks */,
+				3231B59D21D76060007C82F2 /* Foundation.framework in Frameworks */,
+				3231B59B21D7603F007C82F2 /* libicucore.tbd in Frameworks */,
+				3231B59721D76026007C82F2 /* GLKit.framework in Frameworks */,
+				3231B59521D75F0F007C82F2 /* libQQingMacCommon.a in Frameworks */,
+				E70A312903E2E62653DF6AB9 /* libPods-QQingOnlineStudentMac.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32021EFC2201B1A9001C0660 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				32021EFE2201B1DE001C0660 /* StringExtension.swift */,
+				32DDA989221D268700894F6D /* ViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		320FDC9C21F029A100C5ECB2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				327FD79621F56A89006F2E8C /* AppUpdateConfig.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		320FDC9E21F029A100C5ECB2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		32240CFD21DCA19600F3F1B4 /* 基类 */ = {
+			isa = PBXGroup;
+			children = (
+				32240CFF21DCA1E600F3F1B4 /* QQBaseWindow.swift */,
+				32240D2021DD9C5500F3F1B4 /* QQBaseWindowVC.swift */,
+				32240D2121DD9C5500F3F1B4 /* QQBaseWindowVC.xib */,
+				32DDA9BC221E9F1700894F6D /* QQBaseVC.swift */,
+				32A8F040223F6EE00065E1CB /* QQBaseWebviewVC.swift */,
+				32A8F041223F6EE00065E1CB /* QQBaseWebviewVC.xib */,
+			);
+			path = "基类";
+			sourceTree = "<group>";
+		};
+		32240D3121DE118D00F3F1B4 /* 工具类 */ = {
+			isa = PBXGroup;
+			children = (
+				32DDA92E221A879900894F6D /* 提示浮层 */,
+				327FD76D21F1A67C006F2E8C /* 颜色 */,
+				32240D4021DF2E2300F3F1B4 /* 悬停按钮 */,
+			);
+			path = "工具类";
+			sourceTree = "<group>";
+		};
+		32240D4021DF2E2300F3F1B4 /* 悬停按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				32240D4121DF2E3F00F3F1B4 /* QQHoverButton.swift */,
+			);
+			path = "悬停按钮";
+			sourceTree = "<group>";
+		};
+		32240D4821DF654A00F3F1B4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				32DDA98B221D40B900894F6D /* 设备检测 */,
+				32240D4C21DF657F00F3F1B4 /* 窗口 */,
+				32240D5121DF657F00F3F1B4 /* 登录 */,
+				32240D4921DF657F00F3F1B4 /* 主页 */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		32240D4921DF657F00F3F1B4 /* 主页 */ = {
+			isa = PBXGroup;
+			children = (
+				32A8F0982240D5140065E1CB /* 课堂页 */,
+				3297773A22268DB8003EBC25 /* 列表页H5 */,
+				32240D4B21DF657F00F3F1B4 /* HomeVC.swift */,
+				32240D4A21DF657F00F3F1B4 /* HomeVC.xib */,
+				32DDA981221CFC1A00894F6D /* SettingListView.swift */,
+				32DDA983221CFC4300894F6D /* SettingListView.xib */,
+			);
+			path = "主页";
+			sourceTree = "<group>";
+		};
+		32240D4C21DF657F00F3F1B4 /* 窗口 */ = {
+			isa = PBXGroup;
+			children = (
+				32240D4D21DF657F00F3F1B4 /* LoginWindowVC.xib */,
+				32240D5021DF657F00F3F1B4 /* LoginWindowVC.swift */,
+				32240D4E21DF657F00F3F1B4 /* HomeWindowVC.xib */,
+				32240D4F21DF657F00F3F1B4 /* HomeWindowVC.swift */,
+				329DF71A222E259C0090EB72 /* ClassroomWindowVC.swift */,
+				329DF71B222E259C0090EB72 /* ClassroomWindowVC.xib */,
+				32A8F039223F3DE30065E1CB /* VideoReplayWindowVC.swift */,
+				32A8F03A223F3DE30065E1CB /* VideoReplayWindowVC.xib */,
+			);
+			path = "窗口";
+			sourceTree = "<group>";
+		};
+		32240D5121DF657F00F3F1B4 /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				32240D5221DF657F00F3F1B4 /* LoginVC.swift */,
+				32240D5321DF657F00F3F1B4 /* LoginVC.xib */,
+				32240D5C21DF66B600F3F1B4 /* LoginVM.swift */,
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
+		327FD76D21F1A67C006F2E8C /* 颜色 */ = {
+			isa = PBXGroup;
+			children = (
+				327FD76F21F1A816006F2E8C /* QQColorDefine.swift */,
+			);
+			path = "颜色";
+			sourceTree = "<group>";
+		};
+		327FD77921F1B315006F2E8C /* AppInit&Deinit */ = {
+			isa = PBXGroup;
+			children = (
+				327FD77A21F1B33E006F2E8C /* AppInitializer.swift */,
+				327FD78D21F1BD3C006F2E8C /* AppDeInitializer.swift */,
+			);
+			path = "AppInit&Deinit";
+			sourceTree = "<group>";
+		};
+		327FD79821F56D9B006F2E8C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				329777362226586E003EBC25 /* QQJSExternal.h */,
+				329777372226586E003EBC25 /* QQJSExternal.m */,
+				327FD79921F56DB4006F2E8C /* QQUtils.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3281C762222CC4A800A1A2C7 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				3281C767222CC50400A1A2C7 /* Agora */,
+				3281C763222CC4CD00A1A2C7 /* SDK */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		3281C763222CC4CD00A1A2C7 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				3281C764222CC4E500A1A2C7 /* Agora */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		3281C764222CC4E500A1A2C7 /* Agora */ = {
+			isa = PBXGroup;
+			children = (
+				3281C765222CC4FE00A1A2C7 /* AgoraRtcEngineKit.framework */,
+			);
+			path = Agora;
+			sourceTree = "<group>";
+		};
+		3281C767222CC50400A1A2C7 /* Agora */ = {
+			isa = PBXGroup;
+			children = (
+				3281C768222CC52000A1A2C7 /* AgoraManager.swift */,
+			);
+			path = Agora;
+			sourceTree = "<group>";
+		};
+		3281C7AD222CDD8500A1A2C7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3281C7AE222CDD9D00A1A2C7 /* guide.wav */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		329776BA2223F53E003EBC25 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				329776D32223F556003EBC25 /* 设备检测 */,
+				329776BB2223F53E003EBC25 /* 登录 */,
+				329776C12223F53E003EBC25 /* 列表页 */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		329776BB2223F53E003EBC25 /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				329776BC2223F53E003EBC25 /* pic_qq_logo@2x.png */,
+				329776BD2223F53E003EBC25 /* pic_qq_logo@3x.png */,
+				329776BE2223F53E003EBC25 /* icon_register_frame@2x.png */,
+				329776BF2223F53E003EBC25 /* icon_register_remember@2x.png */,
+				329776C02223F53E003EBC25 /* pic_qq_logo@1x.png */,
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
+		329776C12223F53E003EBC25 /* 列表页 */ = {
+			isa = PBXGroup;
+			children = (
+				329776C22223F53E003EBC25 /* refresh@2x.png */,
+				329776C32223F53E003EBC25 /* help@1x.png */,
+				329776C42223F53E003EBC25 /* setting@2x.png */,
+				329776C52223F53E003EBC25 /* help@2x.png */,
+				329776C62223F53E003EBC25 /* setting@1x.png */,
+				329776C72223F53E003EBC25 /* refresh@1x.png */,
+			);
+			path = "列表页";
+			sourceTree = "<group>";
+		};
+		329776D32223F556003EBC25 /* 设备检测 */ = {
+			isa = PBXGroup;
+			children = (
+				329776DD2223F556003EBC25 /* check_device_button_gray@1x.png */,
+				329776EC2223F556003EBC25 /* check_device_button_gray@2x.png */,
+				329776E12223F556003EBC25 /* check_device_button_green@1x.png */,
+				329776E92223F556003EBC25 /* check_device_button_green@2x.png */,
+				329776E52223F556003EBC25 /* check_device_camera@1x.png */,
+				329776E22223F556003EBC25 /* check_device_camera@2x.png */,
+				329776F02223F556003EBC25 /* check_device_checking@1x.png */,
+				329776DA2223F556003EBC25 /* check_device_checking@2x.png */,
+				329776E72223F556003EBC25 /* check_device_connectFail@1x.png */,
+				329776E42223F556003EBC25 /* check_device_connectFail@2x.png */,
+				329776D82223F556003EBC25 /* check_device_connectSuccess@1x.png */,
+				329776F42223F556003EBC25 /* check_device_connectSuccess@2x.png */,
+				329776E62223F556003EBC25 /* check_device_ear@1x.png */,
+				329776E32223F556003EBC25 /* check_device_ear@2x.png */,
+				329776F22223F556003EBC25 /* check_device_microphone_green@1x.png */,
+				329776D62223F556003EBC25 /* check_device_microphone_green@2x.png */,
+				329776EA2223F556003EBC25 /* check_device_microphone@1x.png */,
+				329776DF2223F556003EBC25 /* check_device_microphone@2x.png */,
+				329776EB2223F556003EBC25 /* check_device_prepared@1x.png */,
+				329776DC2223F556003EBC25 /* check_device_prepared@2x.png */,
+				329776E02223F556003EBC25 /* check_device_snap@1x.png */,
+				329776E82223F556003EBC25 /* check_device_snap@2x.png */,
+				329776D92223F556003EBC25 /* check_device_speaker@1x.png */,
+				329776EF2223F556003EBC25 /* check_device_speaker@2x.png */,
+				329776D52223F556003EBC25 /* check_device_start_voice@1x.png */,
+				329776F12223F556003EBC25 /* check_device_start_voice@2x.png */,
+				329776DE2223F556003EBC25 /* check_device_success@1x.png */,
+				329776ED2223F556003EBC25 /* check_device_success@2x.png */,
+				329776D72223F556003EBC25 /* check_device_voice@1x.png */,
+				329776F32223F556003EBC25 /* check_device_voice@2x.png */,
+				329776F52223F556003EBC25 /* check_device_warn@1x.png */,
+				329776D42223F556003EBC25 /* check_device_warn@2x.png */,
+				329776DB2223F556003EBC25 /* Combined Shape@1x.png */,
+				329776EE2223F556003EBC25 /* Combined Shape@2x.png */,
+			);
+			path = "设备检测";
+			sourceTree = "<group>";
+		};
+		3297773A22268DB8003EBC25 /* 列表页H5 */ = {
+			isa = PBXGroup;
+			children = (
+				3297774322268E7D003EBC25 /* QQCourselistWebVC.swift */,
+				3297774422268E7D003EBC25 /* QQCourselistWebVC.xib */,
+			);
+			path = "列表页H5";
+			sourceTree = "<group>";
+		};
+		329C54DA21D4B69000B7E58C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				329C54DE21D4B69100B7E58C /* libQQingMacCommon.a */,
+				327DE8E62216BBC9000323DD /* mom.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32A8F0982240D5140065E1CB /* 课堂页 */ = {
+			isa = PBXGroup;
+			children = (
+				32A8F0A72240D5210065E1CB /* 视频切换 */,
+				32A8F0992240D5140065E1CB /* ClassroomVC.swift */,
+				32A8F09B2240D5140065E1CB /* ClassroomVC.xib */,
+				32A8F09C2240D5140065E1CB /* ClassroomVM.swift */,
+				32A8F09D2240D5140065E1CB /* QQWhiteboardWebVC.swift */,
+				32A8F09E2240D5140065E1CB /* QQWhiteboardWebVC.xib */,
+				32A8F09F2240D5140065E1CB /* QQHeadVideoView.swift */,
+				32A8F09A2240D5140065E1CB /* QQHeadVideoView.xib */,
+			);
+			path = "课堂页";
+			sourceTree = "<group>";
+		};
+		32A8F0A72240D5210065E1CB /* 视频切换 */ = {
+			isa = PBXGroup;
+			children = (
+				32A8F0A82240D5690065E1CB /* QQHeadVideoSwitchManager.swift */,
+			);
+			path = "视频切换";
+			sourceTree = "<group>";
+		};
+		32CB795921D0AB1D006B0482 = {
+			isa = PBXGroup;
+			children = (
+				329C54D921D4B69000B7E58C /* QQingMacCommon.xcodeproj */,
+				32CB796421D0AB1D006B0482 /* QQingOnlineStudentMac */,
+				32CB796321D0AB1D006B0482 /* Products */,
+				7B2A4D2192DC2C11481ABEE2 /* Pods */,
+				8D472A72DC4779AA0C438E5F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		32CB796321D0AB1D006B0482 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32CB796221D0AB1D006B0482 /* QQingOnlineStudentMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32CB796421D0AB1D006B0482 /* QQingOnlineStudentMac */ = {
+			isa = PBXGroup;
+			children = (
+				3281C7AD222CDD8500A1A2C7 /* Source */,
+				3281C762222CC4A800A1A2C7 /* Vender */,
+				329776BA2223F53E003EBC25 /* Images */,
+				32DDA986221D002B00894F6D /* Protocol */,
+				32021EFC2201B1A9001C0660 /* Extension */,
+				327FD79821F56D9B006F2E8C /* Utility */,
+				327FD77921F1B315006F2E8C /* AppInit&Deinit */,
+				320FDC9C21F029A100C5ECB2 /* Application */,
+				320FDC9E21F029A100C5ECB2 /* Models */,
+				32240D4821DF654A00F3F1B4 /* ViewController */,
+				32240D3121DE118D00F3F1B4 /* 工具类 */,
+				32240CFD21DCA19600F3F1B4 /* 基类 */,
+				32CB796521D0AB1D006B0482 /* AppDelegate.swift */,
+				32CB796721D0AB1E006B0482 /* Assets.xcassets */,
+				32CB796921D0AB1E006B0482 /* MainMenu.xib */,
+				32CB796C21D0AB1E006B0482 /* Info.plist */,
+				32A8F0922240837D0065E1CB /* QQingMac-Prefix.pch */,
+				32CB796D21D0AB1E006B0482 /* QQingOnlineStudentMac.entitlements */,
+				329C54F421D60DED00B7E58C /* QQingOnlineStudentMac-Bridging-Header.h */,
+			);
+			path = QQingOnlineStudentMac;
+			sourceTree = "<group>";
+		};
+		32DDA92E221A879900894F6D /* 提示浮层 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "提示浮层";
+			sourceTree = "<group>";
+		};
+		32DDA986221D002B00894F6D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				32DDA987221D009E00894F6D /* QQNibLoadProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		32DDA98B221D40B900894F6D /* 设备检测 */ = {
+			isa = PBXGroup;
+			children = (
+				32DDA98C221D40E100894F6D /* QQCheckDeviceView.swift */,
+				32DDA990221D448300894F6D /* QQCheckDeviceView.xib */,
+				32DDAA702223CBF600894F6D /* QQCheckDevicePrepareView.swift */,
+				32DDAA722223CC3600894F6D /* QQCheckDevicePrepareView.xib */,
+				32DDAA752223D72900894F6D /* QQCheckDeviceEarphoneAndSpeakerView.swift */,
+				32DDAA772223D73600894F6D /* QQCheckDeviceEarphoneAndSpeakerView.xib */,
+				32DDAA792223DE4A00894F6D /* QQCheckDeviceCameraView.swift */,
+				32DDAA7B2223DE5B00894F6D /* QQCheckDeviceCameraView.xib */,
+				32DDAA7D2223E1F600894F6D /* QQCheckDeviceMicrophoneView.swift */,
+				32DDAA7F2223E38700894F6D /* QQCheckDeviceMicrophoneView.xib */,
+				3297771E2225443F003EBC25 /* QQCheckDeviceNetworkView.swift */,
+				329777202225445B003EBC25 /* QQCheckDeviceNetworkView.xib */,
+				3297771B22252B69003EBC25 /* QQCheckDeviceProgressView.swift */,
+			);
+			path = "设备检测";
+			sourceTree = "<group>";
+		};
+		7B2A4D2192DC2C11481ABEE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE838F16541309E8901D3F40 /* Pods-QQingOnlineStudentMac.debug.xcconfig */,
+				4FE5C633B102261AB79124F4 /* Pods-QQingOnlineStudentMac.release.xcconfig */,
+				5897C4FAAE44A2B2A1DBA079 /* Pods-QQingOnlineStudentMac.debug.xcconfig */,
+				4291CE08AAE703384861E782 /* Pods-QQingOnlineStudentMac.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8D472A72DC4779AA0C438E5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3281C7AA222CCA4400A1A2C7 /* CoreVideo.framework */,
+				3281C7A8222CCA2900A1A2C7 /* CoreGraphics.framework */,
+				3281C7A6222CCA1100A1A2C7 /* AudioToolbox.framework */,
+				3281C7A2222CC9AE00A1A2C7 /* libc++.1.tbd */,
+				32DDA94B221C131600894F6D /* Accelerate.framework */,
+				32DDA949221C12FD00894F6D /* CoreWLAN.framework */,
+				32DDA947221C12E400894F6D /* libresolv.9.tbd */,
+				327DE8CA221691B3000323DD /* cmbkeyboard.framework */,
+				327DE8C7221690C4000323DD /* WebP.framework */,
+				3231B5CA21D761EE007C82F2 /* libc++.tbd */,
+				3231B5C821D76189007C82F2 /* CoreMedia.framework */,
+				3231B5C621D7617E007C82F2 /* VideoToolbox.framework */,
+				3231B5C421D76170007C82F2 /* UserNotifications.framework */,
+				3231B5C221D7615D007C82F2 /* WebKit.framework */,
+				3231B5C021D7614F007C82F2 /* JavaScriptCore.framework */,
+				3231B5BE21D76140007C82F2 /* AVFoundation.framework */,
+				3231B5BC21D7613A007C82F2 /* MediaPlayer.framework */,
+				3231B5BA21D76132007C82F2 /* Photos.framework */,
+				3231B5B821D76129007C82F2 /* libresolv.tbd */,
+				3231B5B621D76120007C82F2 /* libxml2.tbd */,
+				3231B5B421D76115007C82F2 /* CoreAudio.framework */,
+				3231B5B221D76105007C82F2 /* libiconv.tbd */,
+				3231B5B021D760FA007C82F2 /* Security.framework */,
+				3231B5AE21D760F1007C82F2 /* ImageIO.framework */,
+				3231B5AC21D760DA007C82F2 /* QuartzCore.framework */,
+				3231B5AA21D760D1007C82F2 /* CoreText.framework */,
+				3231B5A821D760C8007C82F2 /* SystemConfiguration.framework */,
+				3231B5A621D760BE007C82F2 /* CoreTelephony.framework */,
+				3231B5A421D760A5007C82F2 /* CoreData.framework */,
+				3231B5A221D76097007C82F2 /* CFNetwork.framework */,
+				3231B5A021D7608E007C82F2 /* libsqlite3.0.tbd */,
+				3231B59E21D7606E007C82F2 /* libz.tbd */,
+				3231B59C21D76060007C82F2 /* Foundation.framework */,
+				3231B59A21D7603F007C82F2 /* libicucore.tbd */,
+				3231B59821D7602E007C82F2 /* AdSupport.framework */,
+				3231B59621D76026007C82F2 /* GLKit.framework */,
+				799E599ED54C60339B4A241C /* libPods-QQingOnlineStudentMac.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32CB796121D0AB1D006B0482 /* QQingOnlineStudentMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32CB797021D0AB1E006B0482 /* Build configuration list for PBXNativeTarget "QQingOnlineStudentMac" */;
+			buildPhases = (
+				527065AC00E6F19193F962DC /* [CP] Check Pods Manifest.lock */,
+				32CB795E21D0AB1D006B0482 /* Sources */,
+				32CB795F21D0AB1D006B0482 /* Frameworks */,
+				32CB796021D0AB1D006B0482 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327DE8E32216BBC9000323DD /* PBXTargetDependency */,
+				329C54E021D4B69C00B7E58C /* PBXTargetDependency */,
+			);
+			name = QQingOnlineStudentMac;
+			productName = QQingOnlineStudentMac;
+			productReference = 32CB796221D0AB1D006B0482 /* QQingOnlineStudentMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32CB795A21D0AB1D006B0482 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "陶澄";
+				TargetAttributes = {
+					32CB796121D0AB1D006B0482 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 32CB795D21D0AB1D006B0482 /* Build configuration list for PBXProject "QQingOnlineStudentMac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32CB795921D0AB1D006B0482;
+			productRefGroup = 32CB796321D0AB1D006B0482 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 329C54DA21D4B69000B7E58C /* Products */;
+					ProjectRef = 329C54D921D4B69000B7E58C /* QQingMacCommon.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				32CB796121D0AB1D006B0482 /* QQingOnlineStudentMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		327DE8E62216BBC9000323DD /* mom.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = mom.bundle;
+			remoteRef = 327DE8E52216BBC9000323DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		329C54DE21D4B69100B7E58C /* libQQingMacCommon.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libQQingMacCommon.a;
+			remoteRef = 329C54DD21D4B69100B7E58C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32CB796021D0AB1D006B0482 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				329776C82223F53F003EBC25 /* pic_qq_logo@2x.png in Resources */,
+				329777052223F556003EBC25 /* check_device_ear@2x.png in Resources */,
+				329776FC2223F556003EBC25 /* check_device_checking@2x.png in Resources */,
+				3281C7AF222CDD9E00A1A2C7 /* guide.wav in Resources */,
+				329777172223F556003EBC25 /* check_device_warn@1x.png in Resources */,
+				32DDAA7C2223DE5B00894F6D /* QQCheckDeviceCameraView.xib in Resources */,
+				32240D5B21DF658000F3F1B4 /* LoginVC.xib in Resources */,
+				329776F62223F556003EBC25 /* check_device_warn@2x.png in Resources */,
+				32240D2321DD9C5500F3F1B4 /* QQBaseWindowVC.xib in Resources */,
+				329776FA2223F556003EBC25 /* check_device_connectSuccess@1x.png in Resources */,
+				329776CC2223F53F003EBC25 /* pic_qq_logo@1x.png in Resources */,
+				32240D5421DF657F00F3F1B4 /* HomeVC.xib in Resources */,
+				32DDA991221D448300894F6D /* QQCheckDeviceView.xib in Resources */,
+				3297770D2223F556003EBC25 /* check_device_prepared@1x.png in Resources */,
+				329777102223F556003EBC25 /* Combined Shape@2x.png in Resources */,
+				32CB796821D0AB1E006B0482 /* Assets.xcassets in Resources */,
+				329776D22223F53F003EBC25 /* refresh@1x.png in Resources */,
+				3297770F2223F556003EBC25 /* check_device_success@2x.png in Resources */,
+				3297770A2223F556003EBC25 /* check_device_snap@2x.png in Resources */,
+				329777042223F556003EBC25 /* check_device_camera@2x.png in Resources */,
+				3297770E2223F556003EBC25 /* check_device_button_gray@2x.png in Resources */,
+				329776F72223F556003EBC25 /* check_device_start_voice@1x.png in Resources */,
+				32A8F0A12240D5150065E1CB /* QQHeadVideoView.xib in Resources */,
+				32A8F043223F6EE00065E1CB /* QQBaseWebviewVC.xib in Resources */,
+				329776F92223F556003EBC25 /* check_device_voice@1x.png in Resources */,
+				32240D5721DF657F00F3F1B4 /* HomeWindowVC.xib in Resources */,
+				32DDAA732223CC3600894F6D /* QQCheckDevicePrepareView.xib in Resources */,
+				32A8F0A52240D5150065E1CB /* QQWhiteboardWebVC.xib in Resources */,
+				329777002223F556003EBC25 /* check_device_success@1x.png in Resources */,
+				329777092223F556003EBC25 /* check_device_connectFail@1x.png in Resources */,
+				32240D5621DF657F00F3F1B4 /* LoginWindowVC.xib in Resources */,
+				32DDAA802223E38700894F6D /* QQCheckDeviceMicrophoneView.xib in Resources */,
+				329777032223F556003EBC25 /* check_device_button_green@1x.png in Resources */,
+				329776CA2223F53F003EBC25 /* icon_register_frame@2x.png in Resources */,
+				32CB796B21D0AB1E006B0482 /* MainMenu.xib in Resources */,
+				329777162223F556003EBC25 /* check_device_connectSuccess@2x.png in Resources */,
+				3297770C2223F556003EBC25 /* check_device_microphone@1x.png in Resources */,
+				329776FE2223F556003EBC25 /* check_device_prepared@2x.png in Resources */,
+				329777212225445B003EBC25 /* QQCheckDeviceNetworkView.xib in Resources */,
+				329777022223F556003EBC25 /* check_device_snap@1x.png in Resources */,
+				329776F82223F556003EBC25 /* check_device_microphone_green@2x.png in Resources */,
+				329776CB2223F53F003EBC25 /* icon_register_remember@2x.png in Resources */,
+				329777012223F556003EBC25 /* check_device_microphone@2x.png in Resources */,
+				329DF71D222E259C0090EB72 /* ClassroomWindowVC.xib in Resources */,
+				32DDA984221CFC4300894F6D /* SettingListView.xib in Resources */,
+				329776FF2223F556003EBC25 /* check_device_button_gray@1x.png in Resources */,
+				329777112223F556003EBC25 /* check_device_speaker@2x.png in Resources */,
+				329777082223F556003EBC25 /* check_device_ear@1x.png in Resources */,
+				329777142223F556003EBC25 /* check_device_microphone_green@1x.png in Resources */,
+				3297774622268E7D003EBC25 /* QQCourselistWebVC.xib in Resources */,
+				329776FD2223F556003EBC25 /* Combined Shape@1x.png in Resources */,
+				329777062223F556003EBC25 /* check_device_connectFail@2x.png in Resources */,
+				32A8F0A22240D5150065E1CB /* ClassroomVC.xib in Resources */,
+				329777122223F556003EBC25 /* check_device_checking@1x.png in Resources */,
+				329776D12223F53F003EBC25 /* setting@1x.png in Resources */,
+				329776C92223F53F003EBC25 /* pic_qq_logo@3x.png in Resources */,
+				3297770B2223F556003EBC25 /* check_device_button_green@2x.png in Resources */,
+				329776CF2223F53F003EBC25 /* setting@2x.png in Resources */,
+				329776D02223F53F003EBC25 /* help@2x.png in Resources */,
+				32A8F03C223F3DE30065E1CB /* VideoReplayWindowVC.xib in Resources */,
+				329776CE2223F53F003EBC25 /* help@1x.png in Resources */,
+				32DDAA782223D73600894F6D /* QQCheckDeviceEarphoneAndSpeakerView.xib in Resources */,
+				329776CD2223F53F003EBC25 /* refresh@2x.png in Resources */,
+				329777132223F556003EBC25 /* check_device_start_voice@2x.png in Resources */,
+				329777072223F556003EBC25 /* check_device_camera@1x.png in Resources */,
+				329776FB2223F556003EBC25 /* check_device_speaker@1x.png in Resources */,
+				329777152223F556003EBC25 /* check_device_voice@2x.png in Resources */,
+				327DE8E72216BDB2000323DD /* mom.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		527065AC00E6F19193F962DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QQingOnlineStudentMac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32CB795E21D0AB1D006B0482 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32240D4221DF2E3F00F3F1B4 /* QQHoverButton.swift in Sources */,
+				32A8F0A92240D5690065E1CB /* QQHeadVideoSwitchManager.swift in Sources */,
+				32A8F0A02240D5150065E1CB /* ClassroomVC.swift in Sources */,
+				32240D5821DF657F00F3F1B4 /* HomeWindowVC.swift in Sources */,
+				327FD78E21F1BD3C006F2E8C /* AppDeInitializer.swift in Sources */,
+				32240D5A21DF658000F3F1B4 /* LoginVC.swift in Sources */,
+				32A8F03B223F3DE30065E1CB /* VideoReplayWindowVC.swift in Sources */,
+				329777382226586F003EBC25 /* QQJSExternal.m in Sources */,
+				3281C769222CC52000A1A2C7 /* AgoraManager.swift in Sources */,
+				32DDA988221D009E00894F6D /* QQNibLoadProtocol.swift in Sources */,
+				32DDAA712223CBF600894F6D /* QQCheckDevicePrepareView.swift in Sources */,
+				32240D5521DF657F00F3F1B4 /* HomeVC.swift in Sources */,
+				32A8F0A42240D5150065E1CB /* QQWhiteboardWebVC.swift in Sources */,
+				32240D5921DF658000F3F1B4 /* LoginWindowVC.swift in Sources */,
+				32DDA982221CFC1A00894F6D /* SettingListView.swift in Sources */,
+				32A8F0A32240D5150065E1CB /* ClassroomVM.swift in Sources */,
+				32A8F042223F6EE00065E1CB /* QQBaseWebviewVC.swift in Sources */,
+				32240D5D21DF66B600F3F1B4 /* LoginVM.swift in Sources */,
+				32021EFF2201B1DE001C0660 /* StringExtension.swift in Sources */,
+				32DDA9BD221E9F1700894F6D /* QQBaseVC.swift in Sources */,
+				32240D2221DD9C5500F3F1B4 /* QQBaseWindowVC.swift in Sources */,
+				327FD77B21F1B33E006F2E8C /* AppInitializer.swift in Sources */,
+				3297771C22252B69003EBC25 /* QQCheckDeviceProgressView.swift in Sources */,
+				32DDAA7E2223E1F600894F6D /* QQCheckDeviceMicrophoneView.swift in Sources */,
+				3297774522268E7D003EBC25 /* QQCourselistWebVC.swift in Sources */,
+				32DDAA762223D72900894F6D /* QQCheckDeviceEarphoneAndSpeakerView.swift in Sources */,
+				32240D0021DCA1E600F3F1B4 /* QQBaseWindow.swift in Sources */,
+				329DF71C222E259C0090EB72 /* ClassroomWindowVC.swift in Sources */,
+				32DDA98A221D268700894F6D /* ViewExtension.swift in Sources */,
+				32DDAA7A2223DE4A00894F6D /* QQCheckDeviceCameraView.swift in Sources */,
+				32DDA98D221D40E100894F6D /* QQCheckDeviceView.swift in Sources */,
+				3297771F2225443F003EBC25 /* QQCheckDeviceNetworkView.swift in Sources */,
+				32A8F0A62240D5150065E1CB /* QQHeadVideoView.swift in Sources */,
+				327FD79A21F56DB4006F2E8C /* QQUtils.swift in Sources */,
+				327FD79721F56A89006F2E8C /* AppUpdateConfig.swift in Sources */,
+				327FD77021F1A816006F2E8C /* QQColorDefine.swift in Sources */,
+				32CB796621D0AB1D006B0482 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		327DE8E32216BBC9000323DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mom;
+			targetProxy = 327DE8E22216BBC9000323DD /* PBXContainerItemProxy */;
+		};
+		329C54E021D4B69C00B7E58C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QQingMacCommon;
+			targetProxy = 329C54DF21D4B69C00B7E58C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32CB796921D0AB1E006B0482 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32CB796A21D0AB1E006B0482 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32CB796E21D0AB1E006B0482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32CB796F21D0AB1E006B0482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		32CB797121D0AB1E006B0482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5897C4FAAE44A2B2A1DBA079 /* Pods-QQingOnlineStudentMac.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CODE_SIGN_ENTITLEMENTS = QQingOnlineStudentMac/QQingOnlineStudentMac.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4W9997R7AV;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QQingMacCommon/QQingMacCommon/QQingCommon/Vendor/WebP",
+					"$(PROJECT_DIR)/QQingMacCommon/QQingMacCommon/QQingCommon/Vendor/SDK/cmbkeyboard",
+					"$(PROJECT_DIR)/QQingOnlineStudentMac",
+					"$(PROJECT_DIR)/QQingOnlineStudentMac/Vender/SDK/Agora",
+				);
+				GCC_PREFIX_HEADER = "QQingOnlineStudentMac/QQingMac-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveCocoa/ReactiveCocoa.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveSwift/ReactiveSwift.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result/Result.framework/Headers\"",
+					"${SRCROOT}/QQingMacCommon/**",
+				);
+				INFOPLIST_FILE = QQingOnlineStudentMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"ReactiveCocoa\"",
+					"-framework",
+					"\"ReactiveSwift\"",
+					"-framework",
+					"\"Result\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-ObjC",
+					"-fobjc-arc",
+					"-w",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qq.studentOnlineMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "QQingOnlineStudentMac/QQingOnlineStudentMac-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				USER_HEADER_SEARCH_PATHS = "";
+				WARNING_CFLAGS = (
+					"-Wno-documentation",
+					"-Wno-unused-function",
+				);
+			};
+			name = Debug;
+		};
+		32CB797221D0AB1E006B0482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4291CE08AAE703384861E782 /* Pods-QQingOnlineStudentMac.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CODE_SIGN_ENTITLEMENTS = QQingOnlineStudentMac/QQingOnlineStudentMac.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4W9997R7AV;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QQingMacCommon/QQingMacCommon/QQingCommon/Vendor/WebP",
+					"$(PROJECT_DIR)/QQingMacCommon/QQingMacCommon/QQingCommon/Vendor/SDK/cmbkeyboard",
+					"$(PROJECT_DIR)/QQingOnlineStudentMac",
+					"$(PROJECT_DIR)/QQingOnlineStudentMac/Vender/SDK/Agora",
+				);
+				GCC_PREFIX_HEADER = "QQingOnlineStudentMac/QQingMac-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveCocoa/ReactiveCocoa.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveSwift/ReactiveSwift.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result/Result.framework/Headers\"",
+					"${SRCROOT}/QQingMacCommon/**",
+				);
+				INFOPLIST_FILE = QQingOnlineStudentMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"ReactiveCocoa\"",
+					"-framework",
+					"\"ReactiveSwift\"",
+					"-framework",
+					"\"Result\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-ObjC",
+					"-fobjc-arc",
+					"-w",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qq.studentOnlineMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "QQingOnlineStudentMac/QQingOnlineStudentMac-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				USER_HEADER_SEARCH_PATHS = "";
+				WARNING_CFLAGS = (
+					"-Wno-documentation",
+					"-Wno-unused-function",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32CB795D21D0AB1D006B0482 /* Build configuration list for PBXProject "QQingOnlineStudentMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32CB796E21D0AB1E006B0482 /* Debug */,
+				32CB796F21D0AB1E006B0482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32CB797021D0AB1E006B0482 /* Build configuration list for PBXNativeTarget "QQingOnlineStudentMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32CB797121D0AB1E006B0482 /* Debug */,
+				32CB797221D0AB1E006B0482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32CB795A21D0AB1D006B0482 /* Project object */;
+}

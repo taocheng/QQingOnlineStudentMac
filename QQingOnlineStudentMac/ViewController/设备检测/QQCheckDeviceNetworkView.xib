@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="QQCheckDeviceNetworkView" customModule="QQingOnlineStudentMac" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="700" height="468"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="om7-JI-0i9">
+                    <rect key="frame" x="8" y="441" width="58" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="设备检测" id="tZB-9w-uBS">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.47843137250000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="ARa-qj-9dO">
+                    <rect key="frame" x="0.0" y="397" width="700" height="35"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fq1-36-mkw">
+                            <rect key="frame" x="95" y="11" width="14" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="14" id="oEo-Bp-ovk"/>
+                                <constraint firstAttribute="height" constant="14" id="zaP-FO-8dk"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="check_device_prepared" id="uFs-hw-yUD"/>
+                        </imageView>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f0s-vD-QQD">
+                            <rect key="frame" x="219" y="17" width="60" height="2"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="4yl-0F-3Ki"/>
+                                <constraint firstAttribute="height" constant="2" id="te8-TV-HFp"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="check_device_snap" id="jW4-LA-wpD"/>
+                        </imageView>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1OD-hK-nhb">
+                            <rect key="frame" x="359" y="14" width="60" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="Txx-qD-slK"/>
+                                <constraint firstAttribute="width" constant="60" id="tIy-9Z-Omd"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="check_device_snap" id="UOd-wK-3vb"/>
+                        </imageView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IEr-jy-Q67">
+                            <rect key="frame" x="127" y="10" width="84" height="17"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="耳机，扬声器" id="7JO-H5-CLU">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1LJ-1N-xZp">
+                            <rect key="frame" x="297" y="10" width="44" height="17"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="摄像头" id="4vI-lS-6fg">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zFv-mY-JYv">
+                            <rect key="frame" x="437" y="11" width="44" height="17"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="麦克风" id="CCZ-Rv-WNN">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jO3-Jo-yeX">
+                            <rect key="frame" x="577" y="12" width="31" height="17"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="网络" id="lr2-mn-xxH">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sZd-ZV-c9W">
+                            <rect key="frame" x="499" y="-4" width="60" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="9Vv-Nu-9Ba"/>
+                                <constraint firstAttribute="height" constant="48" id="tZO-Zt-WRL"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="check_device_snap" id="2yo-pg-OKU"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="zFv-mY-JYv" firstAttribute="leading" secondItem="1OD-hK-nhb" secondAttribute="trailing" constant="20" id="BQQ-JG-fKv"/>
+                        <constraint firstItem="sZd-ZV-c9W" firstAttribute="leading" secondItem="zFv-mY-JYv" secondAttribute="trailing" constant="20" id="Hhb-54-oJ6"/>
+                        <constraint firstItem="1LJ-1N-xZp" firstAttribute="leading" secondItem="f0s-vD-QQD" secondAttribute="trailing" constant="20" id="KL4-me-cUr"/>
+                        <constraint firstAttribute="height" constant="35" id="N8a-ks-rt2"/>
+                        <constraint firstItem="jO3-Jo-yeX" firstAttribute="leading" secondItem="sZd-ZV-c9W" secondAttribute="trailing" constant="20" id="OIX-d4-x9L"/>
+                        <constraint firstItem="Fq1-36-mkw" firstAttribute="leading" secondItem="ARa-qj-9dO" secondAttribute="leading" constant="95" id="V0h-Sl-RkG"/>
+                        <constraint firstItem="Fq1-36-mkw" firstAttribute="centerY" secondItem="ARa-qj-9dO" secondAttribute="centerY" id="Z6i-qB-e8n"/>
+                        <constraint firstItem="IEr-jy-Q67" firstAttribute="leading" secondItem="Fq1-36-mkw" secondAttribute="trailing" constant="20" id="ZjC-4W-qnk"/>
+                        <constraint firstItem="jO3-Jo-yeX" firstAttribute="centerY" secondItem="sZd-ZV-c9W" secondAttribute="centerY" id="ikX-Gl-Lr5"/>
+                        <constraint firstItem="sZd-ZV-c9W" firstAttribute="centerY" secondItem="zFv-mY-JYv" secondAttribute="centerY" id="m0M-Uz-oTX"/>
+                        <constraint firstItem="IEr-jy-Q67" firstAttribute="centerY" secondItem="Fq1-36-mkw" secondAttribute="centerY" id="n7r-Jc-B4U"/>
+                        <constraint firstItem="1OD-hK-nhb" firstAttribute="leading" secondItem="1LJ-1N-xZp" secondAttribute="trailing" constant="20" id="nnu-X4-rBD"/>
+                        <constraint firstItem="zFv-mY-JYv" firstAttribute="centerY" secondItem="1OD-hK-nhb" secondAttribute="centerY" id="ova-E9-VaO"/>
+                        <constraint firstItem="f0s-vD-QQD" firstAttribute="centerY" secondItem="IEr-jy-Q67" secondAttribute="centerY" id="pNi-NN-6EO"/>
+                        <constraint firstItem="f0s-vD-QQD" firstAttribute="leading" secondItem="IEr-jy-Q67" secondAttribute="trailing" constant="10" id="rsO-VZ-5Ud"/>
+                        <constraint firstItem="1LJ-1N-xZp" firstAttribute="centerY" secondItem="f0s-vD-QQD" secondAttribute="centerY" id="sMl-w8-fFe"/>
+                        <constraint firstItem="1OD-hK-nhb" firstAttribute="centerY" secondItem="1LJ-1N-xZp" secondAttribute="centerY" id="trt-qx-0On"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="zPH-Np-oMS"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="T7H-Ky-xby">
+                    <rect key="frame" x="0.0" y="0.0" width="700" height="397"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="q2L-4c-Xkf">
+                            <rect key="frame" x="308" y="350" width="84" height="17"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="正在为您检测" id="yOx-Xb-7Vm">
+                                <font key="font" usesAppearanceFont="YES"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W1R-EH-EEk">
+                            <rect key="frame" x="234" y="211" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="IOM-f8-JNs"/>
+                                <constraint firstAttribute="width" constant="48" id="Iru-nJ-7Pz"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="check_device_button_green" id="ySL-eP-FVl"/>
+                        </imageView>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H3g-YJ-zVl">
+                            <rect key="frame" x="418" y="211" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="hAY-VB-X5s"/>
+                                <constraint firstAttribute="width" constant="48" id="kvH-zv-ggG"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="check_device_button_green" id="3Jz-iH-n3e"/>
+                        </imageView>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="bUw-oV-C8T">
+                            <rect key="frame" x="282" y="187" width="136" height="96"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="96" id="s7n-Sa-jpp"/>
+                            </constraints>
+                        </customView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="H3g-YJ-zVl" firstAttribute="leading" secondItem="bUw-oV-C8T" secondAttribute="trailing" id="7mf-RA-gzc"/>
+                        <constraint firstItem="W1R-EH-EEk" firstAttribute="leading" secondItem="T7H-Ky-xby" secondAttribute="leading" constant="234" id="9ZG-Bo-oZ4"/>
+                        <constraint firstItem="H3g-YJ-zVl" firstAttribute="centerY" secondItem="bUw-oV-C8T" secondAttribute="centerY" id="DBU-zN-DLT"/>
+                        <constraint firstAttribute="bottom" secondItem="W1R-EH-EEk" secondAttribute="bottom" constant="211" id="Mga-Zn-NuH"/>
+                        <constraint firstAttribute="trailing" secondItem="H3g-YJ-zVl" secondAttribute="trailing" constant="234" id="VaX-76-HwL"/>
+                        <constraint firstItem="q2L-4c-Xkf" firstAttribute="centerX" secondItem="T7H-Ky-xby" secondAttribute="centerX" id="Xbg-rU-8ke"/>
+                        <constraint firstItem="q2L-4c-Xkf" firstAttribute="top" secondItem="T7H-Ky-xby" secondAttribute="top" constant="30" id="aNT-cP-gLX"/>
+                        <constraint firstAttribute="bottom" secondItem="H3g-YJ-zVl" secondAttribute="bottom" constant="211" id="gqz-fm-G2W"/>
+                        <constraint firstItem="bUw-oV-C8T" firstAttribute="leading" secondItem="W1R-EH-EEk" secondAttribute="trailing" id="q7A-my-rZ3"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="iGm-LP-tcP">
+                    <rect key="frame" x="0.0" y="0.0" width="700" height="397"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cQO-cu-rEJ">
+                            <rect key="frame" x="-2" y="350" width="704" height="17"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="您的网络已断开！请重新连接" id="lQK-Y7-fzy">
+                                <font key="font" usesAppearanceFont="YES"/>
+                                <color key="textColor" name="systemPinkColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2EF-pN-Zqa">
+                            <rect key="frame" x="234" y="213" width="233" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="233" id="gal-hq-QK4"/>
+                                <constraint firstAttribute="height" constant="46" id="p6O-zT-UFE"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="check_device_connectFail" id="yrw-4X-zLv"/>
+                        </imageView>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rfO-mI-lWD">
+                            <rect key="frame" x="240" y="29" width="100" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="LvJ-nV-BAE"/>
+                                <constraint firstAttribute="height" constant="35" id="X4W-4F-lCR"/>
+                            </constraints>
+                            <buttonCell key="cell" type="inline" title="重新检测" bezelStyle="inline" image="check_device_button_green" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="YDw-GO-Oxi">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="systemBold"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="didClickOnReconnectButton:" target="c22-O7-iKe" id="CoA-0A-zsG"/>
+                            </connections>
+                        </button>
+                        <button translatesAutoresizingMaskIntoConstraints="NO" id="Qxb-Nt-0bg">
+                            <rect key="frame" x="360" y="30" width="100" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="68O-HV-FZC"/>
+                                <constraint firstAttribute="height" constant="35" id="sKM-vP-AYo"/>
+                            </constraints>
+                            <buttonCell key="cell" type="square" title="跳过此步骤" bezelStyle="shadowlessSquare" image="check_device_button_gray" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="KEh-bh-EJP">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="didClickOnIgnoreButton:" target="c22-O7-iKe" id="IHr-Mc-vaN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="cQO-cu-rEJ" secondAttribute="trailing" id="Hyu-4k-aAr"/>
+                        <constraint firstAttribute="trailing" secondItem="Qxb-Nt-0bg" secondAttribute="trailing" constant="240" id="Mtj-Ho-KFX"/>
+                        <constraint firstItem="cQO-cu-rEJ" firstAttribute="leading" secondItem="iGm-LP-tcP" secondAttribute="leading" id="OpV-7W-asA"/>
+                        <constraint firstItem="2EF-pN-Zqa" firstAttribute="top" secondItem="cQO-cu-rEJ" secondAttribute="bottom" constant="91" id="Ujw-SK-5Pu"/>
+                        <constraint firstAttribute="bottom" secondItem="Qxb-Nt-0bg" secondAttribute="bottom" constant="30" id="cRe-iQ-b5f"/>
+                        <constraint firstItem="cQO-cu-rEJ" firstAttribute="top" secondItem="iGm-LP-tcP" secondAttribute="top" constant="30" id="kpJ-SX-jXS"/>
+                        <constraint firstItem="rfO-mI-lWD" firstAttribute="leading" secondItem="iGm-LP-tcP" secondAttribute="leading" constant="240" id="lwm-dX-bVR"/>
+                        <constraint firstAttribute="bottom" secondItem="rfO-mI-lWD" secondAttribute="bottom" constant="30" id="umI-nf-oFt"/>
+                        <constraint firstItem="2EF-pN-Zqa" firstAttribute="centerX" secondItem="cQO-cu-rEJ" secondAttribute="centerX" id="yaf-vj-lD1"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="O3u-aK-Q6U">
+                    <rect key="frame" x="0.0" y="0.0" width="700" height="397"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="E6w-U6-ouv">
+                            <rect key="frame" x="-2" y="350" width="704" height="17"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="您已完成检测，当前网络状态：一般" allowsEditingTextAttributes="YES" id="Xpp-i6-0qH">
+                                <font key="font" usesAppearanceFont="YES"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oDL-UT-ndd">
+                            <rect key="frame" x="-2" y="324" width="704" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="上课期间请尽量使用有线网络或靠近无线路由器，避免下载、观看视频等占用网络的操作" id="9GR-hn-9zI">
+                                <font key="font" metaFont="system" size="12"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hs4-CL-W6h">
+                            <rect key="frame" x="234" y="213" width="233" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="233" id="JQz-Te-j6S"/>
+                                <constraint firstAttribute="height" constant="46" id="lpU-LQ-eHh"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="check_device_connectSuccess" id="2aA-2C-ixC"/>
+                        </imageView>
+                        <button translatesAutoresizingMaskIntoConstraints="NO" id="7t0-ex-EJc">
+                            <rect key="frame" x="300" y="30" width="100" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="DQf-kh-lGx"/>
+                                <constraint firstAttribute="width" constant="100" id="kT8-Ge-cdJ"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="lXp-Ll-L61"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="vdV-YF-ffu"/>
+                            </constraints>
+                            <buttonCell key="cell" type="square" title="我知道了" bezelStyle="shadowlessSquare" image="check_device_button_gray" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="cTP-ya-HzF">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="didClickOnKnowButton:" target="c22-O7-iKe" id="h7W-GU-ehi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="E6w-U6-ouv" secondAttribute="trailing" id="0H8-PM-CxM"/>
+                        <constraint firstAttribute="bottom" secondItem="7t0-ex-EJc" secondAttribute="bottom" constant="30" id="825-V5-1Zf"/>
+                        <constraint firstItem="E6w-U6-ouv" firstAttribute="top" secondItem="O3u-aK-Q6U" secondAttribute="top" constant="30" id="HkJ-GZ-kkf"/>
+                        <constraint firstItem="oDL-UT-ndd" firstAttribute="top" secondItem="E6w-U6-ouv" secondAttribute="bottom" constant="10" id="KOt-PV-qZn"/>
+                        <constraint firstItem="hs4-CL-W6h" firstAttribute="centerX" secondItem="oDL-UT-ndd" secondAttribute="centerX" id="KbA-wI-NE4"/>
+                        <constraint firstItem="7t0-ex-EJc" firstAttribute="centerX" secondItem="hs4-CL-W6h" secondAttribute="centerX" id="LKm-Ho-PV4"/>
+                        <constraint firstItem="hs4-CL-W6h" firstAttribute="top" secondItem="oDL-UT-ndd" secondAttribute="bottom" constant="65" id="Nn5-5g-G4e"/>
+                        <constraint firstAttribute="trailing" secondItem="oDL-UT-ndd" secondAttribute="trailing" id="UML-8V-NH9"/>
+                        <constraint firstItem="oDL-UT-ndd" firstAttribute="leading" secondItem="O3u-aK-Q6U" secondAttribute="leading" id="iqA-FH-Qgy"/>
+                        <constraint firstItem="E6w-U6-ouv" firstAttribute="leading" secondItem="O3u-aK-Q6U" secondAttribute="leading" id="lZU-A6-r3J"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ARa-qj-9dO" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="04W-qE-Xyo"/>
+                <constraint firstAttribute="bottom" secondItem="iGm-LP-tcP" secondAttribute="bottom" id="0C1-BX-wH8"/>
+                <constraint firstItem="iGm-LP-tcP" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="1hZ-1d-vBP"/>
+                <constraint firstAttribute="trailing" secondItem="O3u-aK-Q6U" secondAttribute="trailing" id="1sS-ZB-Z7X"/>
+                <constraint firstAttribute="bottom" secondItem="O3u-aK-Q6U" secondAttribute="bottom" id="1uz-9i-U0a"/>
+                <constraint firstAttribute="trailing" secondItem="iGm-LP-tcP" secondAttribute="trailing" id="2GZ-gb-BFs"/>
+                <constraint firstAttribute="trailing" secondItem="T7H-Ky-xby" secondAttribute="trailing" id="2XO-28-gmz"/>
+                <constraint firstItem="O3u-aK-Q6U" firstAttribute="top" secondItem="ARa-qj-9dO" secondAttribute="bottom" id="6dy-Hv-iY9"/>
+                <constraint firstAttribute="bottom" secondItem="T7H-Ky-xby" secondAttribute="bottom" id="CK3-iP-WCd"/>
+                <constraint firstItem="iGm-LP-tcP" firstAttribute="top" secondItem="ARa-qj-9dO" secondAttribute="bottom" id="FgD-3m-Rz6"/>
+                <constraint firstAttribute="trailing" secondItem="ARa-qj-9dO" secondAttribute="trailing" id="IgJ-HQ-tQd"/>
+                <constraint firstItem="om7-JI-0i9" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="10" id="IsG-9C-Z7F"/>
+                <constraint firstItem="T7H-Ky-xby" firstAttribute="top" secondItem="ARa-qj-9dO" secondAttribute="bottom" id="UDO-fW-jyM"/>
+                <constraint firstItem="ARa-qj-9dO" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="36" id="X0o-VY-9lV"/>
+                <constraint firstItem="T7H-Ky-xby" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="XeP-EA-X4w"/>
+                <constraint firstItem="om7-JI-0i9" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="10" id="kv8-ur-Wl3"/>
+                <constraint firstItem="O3u-aK-Q6U" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="xVr-12-6zd"/>
+            </constraints>
+            <connections>
+                <outlet property="animatorBackView" destination="bUw-oV-C8T" id="rFm-et-4aU"/>
+                <outlet property="connectFailView" destination="iGm-LP-tcP" id="RfP-av-T6q"/>
+                <outlet property="connectSuccessView" destination="O3u-aK-Q6U" id="poY-Ph-vKf"/>
+                <outlet property="connectingView" destination="T7H-Ky-xby" id="8o6-2R-nI6"/>
+            </connections>
+        </customView>
+    </objects>
+    <resources>
+        <image name="check_device_button_gray" width="51" height="18.5"/>
+        <image name="check_device_button_green" width="50" height="17.5"/>
+        <image name="check_device_connectFail" width="116.5" height="23"/>
+        <image name="check_device_connectSuccess" width="116.5" height="23"/>
+        <image name="check_device_prepared" width="75" height="18"/>
+        <image name="check_device_snap" width="13" height="2.5"/>
+    </resources>
+</document>
